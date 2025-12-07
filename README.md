@@ -32,9 +32,11 @@ zero-day-detection/
 - - Data generation: Tools to create test datasets
 
 ## 🚀 Technical Architecture
+```text
 data_flow = [
     "capture.py → Packet Sniffer",
     "features.py → Feature Extraction",
     "detect.py → Anomaly Prediction",
     "app.py → Visualization Dashboard"
 ]
+```
