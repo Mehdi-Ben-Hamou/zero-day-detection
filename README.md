@@ -14,7 +14,6 @@ zero-day-detection/
 │   └── normal_traffic.csv
 ├── models/                
 │   └── zero_day_model.pkl
-│                   
 │   app.py
 │   capture.py
 │   detect.py
