@@ -4,17 +4,17 @@
 ![Scapy](https://img.shields.io/badge/Scapy-2.5.0-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.25.0-red)
 
-Un système de détection d'anomalies réseau utilisant l'Isolation Forest pour identifier des comportements malveillants inconnus (zero-day).
+A network anomaly detection system using Isolation Forest to identify unknown (zero-day) malicious behaviors.
 
-## 📂 Structure des Fichiers
-```plaintext
+## 📂 File Structure
+```text
 zero-day-detection/
-├── data/                   # Données générées
+├── data/                   
 │   ├── detections.csv
 │   └── normal_traffic.csv
-├── models/                 # Modèles entraînés
+├── models/                
 │   └── zero_day_model.pkl
-|                   # Code source
+│                   
 │   app.py
 │   capture.py
 │   detect.py
@@ -22,19 +22,17 @@ zero-day-detection/
 │   generate_detections.py
 │   generate_normal_data.py
 │   train.py
-└── requirements.txt        # Dépendances
+└── requirements.txt      
 ```
+## 📦 Key Features
+- Real-time capture: Network packet analysis using Scapy
+- Advanced detection:
+- - Feature extraction (entropy, TTL, TCP flags)
+- - Isolation Forest model trained on normal traffic
+- Visualization: Interactive dashboard using Streamlit
+- - Data generation: Tools to create test datasets
 
-## 📦 Fonctionnalités clés
-- **Capture temps réel** : Analyse des paquets réseau via Scapy
-- **Détection avancée** : 
-  - Extraction de caractéristiques (entropie, TTL, flags TCP)
-  - Modèle Isolation Forest entraîné sur du trafic normal
-- **Visualisation** : Dashboard interactif avec Streamlit
-- **Génération de données** : Outils pour créer des datasets de test
-
-## 🚀 Architecture Technique
-```plaintext
+## 🚀 Technical Architecture
 data_flow = [
     "capture.py → Packet Sniffer",
     "features.py → Feature Extraction",
